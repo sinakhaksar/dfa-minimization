@@ -64,15 +64,15 @@ The input file `file.txt` should have the following format:
 
 Example:
 ```
-0->(1,2) # State 0 transitions to state 1 on input '2'
-1->(0,2) # State 1 transitions to state 0 on input '2'
-1->(1,4) # State 1 transitions to state 1 on input '4'
-2->(1,4) # State 2 transitions to state 1 on input '4'
-2->(0,1) # State 2 transitions to state 0 on input '1'
-3->(0,2) # State 3 transitions to state 0 on input '2'
-3->(1,4) # State 3 transitions to state 1 on input '4'
-4->(0,4) # State 4 transitions to state 0 on input '4'
-4->(1,4) # State 4 transitions to state 1 on input '4'
+0->(1,2) # State 0 transitions to state 2 on input '1'
+1->(0,2) # State 1 transitions to state 2 on input '0'
+1->(1,4) # State 1 transitions to state 4 on input '1'
+2->(1,4) # State 2 transitions to state 4 on input '1'
+2->(0,1) # State 2 transitions to state 1 on input '0'
+3->(0,2) # State 3 transitions to state 2 on input '0'
+3->(1,4) # State 3 transitions to state 4 on input '1'
+4->(0,4) # State 4 transitions to state 4 on input '0'
+4->(1,4) # State 4 transitions to state 4 on input '1'
 0 # Start state is 0
 4 # Final state is 4
 0,1 # Alphabet consists of symbols '0' and '1'
